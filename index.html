@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Moon cycle</title>
+  </head>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=Raleway"
+  />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/clock.css" />
+  <link rel="stylesheet" href="./css/weather.css" />
+  <link rel="stylesheet" href="./css/galaxy.css" />
+  <link rel="stylesheet" href="./css/battery.css" />
+  <link rel="stylesheet" href="./css/timer.css" />
+
+  <body>
+    <main>
+      <div id="galaxy" class="galaxy">
+        <div class="star"></div>
+      </div>
+
+      <div class="timerHolder">
+        <p>Current time</p>
+        <div class="clockTimer"></div>
+        <p>Days until fullmoon</p>
+        <div class="countDown"></div>
+        <div class="force" onclick="dayNightCycle(20)">
+          <p>Night</p>
+        </div>
+      </div>
+
+      <div class="lunarPower">
+        <h3>Lunar battery</h3>
+        <div class="lunarBattery">
+          <div class="lunarBatteryShell">
+            <div class="lunarBatteryTop"></div>
+            <span class="batteryPercent">
+              50%
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO: Cloud based on the weather type maybe more -->
+      <!-- <div class="cloud"></div>
+      <div class="cloud"></div> -->
+
+      <div class="lunarClock" id="lunarClock">
+        <img src="img/moon-phase/svg/test.svg" alt="" />
+      </div>
+      <div class="sun">
+        <img src="img/sunny.svg" alt="The sun" />
+      </div>
+
+      <div class="lunarClockArm"></div>
+    </main>
+  </body>
+  <script type="text/javascript" src="./js/timer.js"></script>
+  <script type="text/javascript" src="./js/weather.js"></script>
+  <script type="text/javascript" src="./js/moonphase.js"></script>
+  <script type="text/javascript" src="./js/galaxy.js"></script>
+</html>

@@ -1,0 +1,31 @@
+.lunarClock {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: -150vw;
+  left: 0;
+  width: 200vw;
+  height: 200vw;
+  margin: 0 auto;
+  color: orange;
+  border: 50px solid #ffffe0;
+  border-radius: 100%;
+  background-color: none;
+}
+
+.moons {
+  left: 10px;
+}
+
+.lunarClockArm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid red;
+  border-left: 50px solid transparent;
+}

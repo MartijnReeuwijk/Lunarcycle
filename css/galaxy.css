@@ -1,0 +1,95 @@
+.galaxy {
+  z-index: -10;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.galaxy .star {
+  z-index: -9;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fffa86;
+}
+
+.galaxy .star:nth-of-type(odd) {
+  background-color: white;
+}
+
+.galaxy .star:nth-of-type(10n + 20) {
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 2px #fff;
+}
+.galaxy .star:nth-of-type(11n + 7) {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.5);
+  animation-duration: 1s;
+  animation-name: glow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.sun {
+  position: absolute;
+  right: -25vw;
+  z-index: -1;
+  width: 50vw;
+  height: 50vw;
+  -moz-animation-duration: 180s;
+  -ms-animation-duration: 180s;
+  -webkit-animation-duration: 180s;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: spin;
+  -ms-animation-name: spin;
+  -webkit-animation-name: spin;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+@keyframes glow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.75);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
