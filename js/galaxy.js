@@ -14,8 +14,8 @@ function getBattery() {
 function drawSpace() {
   for (var i = 0; i < 500; i++) {
     // console.log(window.innerHeight * Math.random());
-    document.getElementById("galaxy").innerHTML += `
-      <div class="star" style="top:${1280 * Math.random()}px;left:${1280 *
+    document.getElementById("l-galaxy").innerHTML += `
+      <div class="galaxy-star" style="top:${1280 * Math.random()}px;left:${1280 *
       Math.random()}px"></div>
 `;
   }

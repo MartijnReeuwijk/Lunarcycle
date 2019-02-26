@@ -1,5 +1,5 @@
-.lunarClock {
-  z-index: -1;
+.l-lunarClock {
+  z-index: 0;
   position: absolute;
   right: 0;
   bottom: -150vw;
@@ -8,16 +8,31 @@
   height: 200vw;
   margin: 0 auto;
   color: orange;
-  border: 50px solid #ffffe0;
   border-radius: 100%;
   background-color: none;
 }
 
-.moons {
+.clock-moons {
   left: 10px;
 }
+/* .l-lunarClock{
+  pointer-events:none;
+} */
+.l-lunarClock g{
+    transition: transform 0.5s;
+}
 
-.lunarClockArm {
+.l-lunarClock g:hover{
+  transition: transform 0.5s;
+
+  -webkit-transform :scale(.9);
+   -ms-transform     :scale(.9);
+   transform         :scale(.9);
+
+ }
+
+
+.l-lunarClockArm {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -28,4 +43,30 @@
   border-right: 50px solid transparent;
   border-bottom: 50px solid red;
   border-left: 50px solid transparent;
+}
+.clock-sun {
+  position: absolute;
+  right: -25vw;
+  width: 50vw;
+  height: 50vw;
+  -moz-animation-duration: 180s;
+  -ms-animation-duration: 180s;
+  -webkit-animation-duration: 180s;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: spin;
+  -ms-animation-name: spin;
+  -webkit-animation-name: spin;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  transition: all 0.5s ease-in-out;
+
+}
+.clock-sun:hover{
+  right: 25vw;
+  -moz-animation-duration: 45s;
+  -ms-animation-duration: 45s;
+  -webkit-animation-duration: 45s;
 }

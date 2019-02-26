@@ -7,7 +7,8 @@
   height: 300px;
   margin: 0 auto;
   color: red;
-  background-image: url("../img/cloud.svg");
+  /* background-image: url("../img/cloud.svg"); */
+  /* transition: transform 0.3s; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -15,10 +16,22 @@
   -webkit-animation-duration: 50s;
   -webkit-animation-name: run;
 }
+.cloud .cls-1{
+  fill:#034aec;
+}
 
 .cloud p {
-  position: absolute;
-  bottom: 0;
+  margin: 0px auto;
+  text-align: center;
+  color: black;
+}
+
+.cloud #Layer_2{
+  transition: transform 0.3s;
+}
+.cloud:hover #Layer_2 {
+  transition: transform 0.3s;
+  transform: translate(0px, 75px);
 }
 
 .cloud:nth-of-type(odd) {

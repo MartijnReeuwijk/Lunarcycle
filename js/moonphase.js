@@ -48,15 +48,15 @@ function getMoonPhase(year, month, day) {
   // 5 => Waning Gibbous Moon
   // 6 => Last Quarter Moon
   // 7 => Waning Crescent Moon
-  rotateMoons(b);
-  daysUntilFull(b);
+  rotateclockmoons(b);
+  dayclocksuntilFull(b);
   return b;
 }
 
 // get that rotate
-function rotateMoons(currentMoon) {
-  var rotation = parseInt((360 / 7) * currentMoon);
+function rotateclockmoons(currentMoon) {
+  var rotation = parseInt((360 / 8) * currentMoon);
   document.getElementById(
-    "lunarClock"
+    "l-lunarClock"
   ).style.transform = `rotate(${rotation}deg)`;
 }

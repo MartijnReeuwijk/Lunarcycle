@@ -1,5 +1,6 @@
-.lunarPower {
+.l-lunarPower {
   position: fixed;
+  z-index: 1;
   top: 10px;
   right: 10px;
   width: 175px;
@@ -9,7 +10,7 @@
   text-align: center;
 }
 
-.lunarPower h3 {
+.l-lunarPower h3 {
   width: 100%;
   margin: 10px 0;
   /* padding: 10px; */
@@ -22,7 +23,7 @@
   /* height: 100%; */
 }
 
-.lunarBatteryShell {
+.lunarBattery-Shell {
   position: relative;
   width: 50px;
   height: 125px;
@@ -33,7 +34,7 @@
   box-shadow: 0px 0px 15px 0px #0f0;
 }
 
-.lunarBatteryTop {
+.lunarBattery-Top {
   z-index: -1;
   position: absolute;
   top: -10px;
@@ -45,7 +46,7 @@
   background-color: #bbbbbb;
 }
 
-.batteryPercent {
+.lunarBattery-Percent {
   position: absolute;
   bottom: 0;
   left: 0;

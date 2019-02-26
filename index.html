@@ -18,26 +18,26 @@
 
   <body>
     <main>
-      <div id="galaxy" class="galaxy">
-        <div class="star"></div>
+      <div id="l-galaxy" class="l-galaxy">
+        <div class="galaxy-star"></div>
       </div>
 
-      <div class="timerHolder">
+      <div class="l-timerHolder">
         <p>Current time</p>
-        <div class="clockTimer"></div>
+        <div class="timer-clockTimer"></div>
         <p>Days until fullmoon</p>
-        <div class="countDown"></div>
+        <div class="timer-countDown"></div>
         <div class="force" onclick="dayNightCycle(20)">
           <p>Night</p>
         </div>
       </div>
 
-      <div class="lunarPower">
+      <div class="l-lunarPower">
         <h3>Lunar battery</h3>
         <div class="lunarBattery">
-          <div class="lunarBatteryShell">
-            <div class="lunarBatteryTop"></div>
-            <span class="batteryPercent">
+          <div class="lunarBattery-Shell">
+            <div class="lunarBattery-Top"></div>
+            <span class="lunarBattery-Percent">
               50%
             </span>
           </div>
@@ -45,21 +45,25 @@
       </div>
 
       <!-- TODO: Cloud based on the weather type maybe more -->
-      <!-- <div class="cloud"></div>
-      <div class="cloud"></div> -->
-
-      <div class="lunarClock" id="lunarClock">
-        <img src="img/moon-phase/svg/test.svg" alt="" />
+      <div class="cloud">
+        <p>Hover for weather news</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 384.9"><defs><style>.cls-1{fill:#36a9e1;}.cls-2{fill:#fff;}.cls-3{fill:#c6c6c6;fill-rule:evenodd;}</style></defs><title>cloud</title><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M123.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S125.87,274.05,123.67,284.67Z"/><path class="cls-2" d="M101.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M193.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S195.87,274.05,193.67,284.67Z"/><path class="cls-2" d="M171.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M273.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S275.87,274.05,273.67,284.67Z"/><path class="cls-2" d="M251.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M363.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S365.87,274.05,363.67,284.67Z"/><path class="cls-2" d="M341.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M323.67,234.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S325.87,224.05,323.67,234.67Z"/><path class="cls-2" d="M301.4,244.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M173.67,234.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S175.87,224.05,173.67,234.67Z"/><path class="cls-2" d="M151.4,244.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/></g><g id="Layer_1" data-name="Layer 1"><g id="Page-1"><g id="icon-132-cloud"><path id="cloud" class="cls-3" d="M437.1,136.1a90.38,90.38,0,0,1-34,174.1H95.87A90.36,90.36,0,0,1,60,136.93h0q-.21-3.69-.21-7.44A126.51,126.51,0,0,1,296.35,67.2,99.46,99.46,0,0,1,437.1,136.1Z"/></g></g></g></svg>
       </div>
-      <div class="sun">
+      <div class="cloud">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 384.9"><defs><style>.cls-1{fill:#36a9e1;}.cls-2{fill:#fff;}.cls-3{fill:#c6c6c6;fill-rule:evenodd;}</style></defs><title>cloud</title><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M123.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S125.87,274.05,123.67,284.67Z"/><path class="cls-2" d="M101.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M193.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S195.87,274.05,193.67,284.67Z"/><path class="cls-2" d="M171.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M273.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S275.87,274.05,273.67,284.67Z"/><path class="cls-2" d="M251.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M363.67,284.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S365.87,274.05,363.67,284.67Z"/><path class="cls-2" d="M341.4,294.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M323.67,234.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S325.87,224.05,323.67,234.67Z"/><path class="cls-2" d="M301.4,244.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/><path class="cls-1" d="M173.67,234.67a19.73,19.73,0,0,1-38.63-8c2.22-10.73,26.55-30.9,26.55-30.9S175.87,224.05,173.67,234.67Z"/><path class="cls-2" d="M151.4,244.9a14.56,14.56,0,0,1-11.28-17.19,1.73,1.73,0,0,1,3.39.7,11.08,11.08,0,0,0,8.6,13.1,1.73,1.73,0,0,1-.71,3.39Z"/></g><g id="Layer_1" data-name="Layer 1"><g id="Page-1"><g id="icon-132-cloud"><path id="cloud" class="cls-3" d="M437.1,136.1a90.38,90.38,0,0,1-34,174.1H95.87A90.36,90.36,0,0,1,60,136.93h0q-.21-3.69-.21-7.44A126.51,126.51,0,0,1,296.35,67.2,99.46,99.46,0,0,1,437.1,136.1Z"/></g></g></g></svg>
+      </div>
+
+      <div class="l-lunarClock" id="l-lunarClock">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#f0c421;}.cls-2{fill:#fff;}</style></defs><title>moonPhase</title><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M411.28,142.16a53.62,53.62,0,1,0-53.61-53.61,53.77,53.77,0,0,0,53.61,53.61Z"/><path class="cls-2" d="M411.28,42.59a44.9,44.9,0,0,1,7.66.7,45.89,45.89,0,0,0,0,90.52,45.93,45.93,0,1,1-7.66-91.22Z"/></g><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M280.34,10.51a53,53,0,0,0-24.46-8.92c-1.79-.18-3.62-.27-5.46-.27a53.62,53.62,0,1,0,0,107.23,51.84,51.84,0,0,0,5.46-.28,53.11,53.11,0,0,0,15.36-4,53.72,53.72,0,0,0,9.1-5A54.63,54.63,0,0,0,291.75,89a53.36,53.36,0,0,0,0-68.11,54.09,54.09,0,0,0-11.41-10.37Z"/><path class="cls-2" d="M250.42,100.89a46,46,0,1,1,0-91.91Z"/></g><g id="Layer_4" data-name="Layer 4"><path class="cls-1" d="M444.9,196.8a53.62,53.62,0,1,0,53.61,53.62A53.78,53.78,0,0,0,444.9,196.8Z"/></g><g id="Layer_9" data-name="Layer 9"><path class="cls-1" d="M109.55,134.5a46,46,0,1,1,46-45.95,46,46,0,0,1-45.95,46Z"/><path class="cls-1" d="M109.55,34.93a53.62,53.62,0,1,0,53.61,53.62,53.78,53.78,0,0,0-53.61-53.62Z"/><path class="cls-2" d="M109.55,42.59a45.08,45.08,0,0,0-7.66.7,45.89,45.89,0,0,1,0,90.52,45.93,45.93,0,1,0,7.66-91.22Z"/></g><g id="Layer_8" data-name="Layer 8"><path class="cls-1" d="M109.55,250.41A53.62,53.62,0,1,0,55.93,304a53.78,53.78,0,0,0,53.62-53.62Z"/><path class="cls-2" d="M10,250.41a46,46,0,1,1,46,46,46,46,0,0,1-45.95-46Z"/></g><g id="Layer_7" data-name="Layer 7"><path class="cls-1" d="M109.55,338.67a53.62,53.62,0,1,0,53.61,53.61,53.77,53.77,0,0,0-53.61-53.61Z"/><path class="cls-1" d="M109.55,438.24a46,46,0,1,1,46-46,46,46,0,0,1-45.95,46Z"/><path class="cls-2" d="M78.91,392.28A46.1,46.1,0,0,1,117.21,347a45.93,45.93,0,1,0-7.66,91.22,45.08,45.08,0,0,0,7.66-.7,46.09,46.09,0,0,1-38.3-45.26Z"/></g><g id="Layer_6" data-name="Layer 6"><path class="cls-1" d="M250.42,499.51a53.62,53.62,0,0,0,0-107.23h0a53.62,53.62,0,1,0,0,107.23"/><path class="cls-2" d="M250.42,491.85V399.94a46,46,0,0,1,0,91.91Z"/></g><g id="Layer_5" data-name="Layer 5"><path class="cls-1" d="M391.28,338.67a53.62,53.62,0,1,0,53.62,53.61,53.77,53.77,0,0,0-53.62-53.61Z"/><path class="cls-2" d="M391.28,438.24a44.87,44.87,0,0,1-7.65-.7,45.89,45.89,0,0,0,0-90.52,45.93,45.93,0,1,1,7.65,91.22Z"/></g></svg></div>
+<div class="clock-sun">
         <img src="img/sunny.svg" alt="The sun" />
       </div>
 
-      <div class="lunarClockArm"></div>
+      <div class="l-lunarClockArm"></div>
     </main>
   </body>
   <script type="text/javascript" src="./js/timer.js"></script>
   <script type="text/javascript" src="./js/weather.js"></script>
-  <script type="text/javascript" src="./js/moonphase.js"></script>
-  <script type="text/javascript" src="./js/galaxy.js"></script>
+  <!-- <script type="text/javascript" src="./js/moonphase.js"></script> -->
+  <!-- <script type="text/javascript" src="./js/galaxy.js"></script> -->
 </html>
