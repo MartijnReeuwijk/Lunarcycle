@@ -22,6 +22,11 @@
   /* padding: 10px; */
   /* height: 100%; */
 }
+/* #list:hover   */
+/* dit is voor wat scherm brightness voor de battery */
+body:not(:hover) {
+  opacity: 0.5;
+}
 
 .lunarBattery-Shell {
   position: relative;

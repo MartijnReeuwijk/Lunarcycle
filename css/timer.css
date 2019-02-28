@@ -16,19 +16,20 @@
 .t-bloodMoon,
 .timer-clockTimer,
 .timer-countDown,
-.force {
+.button {
   width: 80%;
   height: 50px;
   margin: 5px auto;
   border-radius: 5px;
   color: white;
   font-size: 30px;
+  line-height: 50px;
   background-color: grey;
   border: 1px solid black;
 }
 .timer-clockTimer p,
 .timer-countDown p,
-.force p {
+.button p {
   width: 100%;
   height: 50px;
   line-height: 50px;

@@ -18,19 +18,17 @@
 /* .l-lunarClock{
   pointer-events:none;
 } */
-.l-lunarClock g{
-    transition: transform 0.5s;
+.l-lunarClock g {
+  transition: transform 0.5s;
 }
 
-.l-lunarClock g:hover{
+.l-lunarClock g:hover {
   transition: transform 0.5s;
-
-  -webkit-transform :scale(.9);
-   -ms-transform     :scale(.9);
-   transform         :scale(.9);
-
- }
-
+  /* Someting more cool */
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
 
 .l-lunarClockArm {
   position: absolute;
@@ -41,7 +39,7 @@
   height: 0;
   margin: 0 auto;
   border-right: 50px solid transparent;
-  border-bottom: 50px solid red;
+  border-bottom: 50px solid #7c89e8;
   border-left: 50px solid transparent;
 }
 .clock-sun {
@@ -62,9 +60,8 @@
   -ms-animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
   transition: all 0.5s ease-in-out;
-
 }
-.clock-sun:hover{
+.clock-sun:hover {
   right: 25vw;
   -moz-animation-duration: 45s;
   -ms-animation-duration: 45s;
